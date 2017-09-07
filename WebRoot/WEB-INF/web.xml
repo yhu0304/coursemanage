@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <display-name></display-name>	
+    <servlet>
+    <description>学生登录</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StudentLoginServlet</servlet-name>
+    <servlet-class>studentServlet.StudentLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>教师登录</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeacherLoginServlet</servlet-name>
+    <servlet-class>teacherServlet.TeacherLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>管理员登录</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdministratorLoginServlet</servlet-name>
+    <servlet-class>adminServlet.AdministratorLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>查询信息</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>STShowInfo</servlet-name>
+    <servlet-class>studentServlet.STShowInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>STChangeInfo1</servlet-name>
+    <servlet-class>studentServlet.STChangeInfo1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>学生信息修改</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>STChangeInfo2</servlet-name>
+    <servlet-class>studentServlet.STChangeInfo2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>学生课程信息</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>STCourse</servlet-name>
+    <servlet-class>studentServlet.STCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>查找可选课程信息</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>STGetOptionalCourse</servlet-name>
+    <servlet-class>studentServlet.STGetOptionalCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>选择课程</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>STChooseCourse</servlet-name>
+    <servlet-class>studentServlet.STChooseCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>查询已选课程</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>STGetMyOptCourse</servlet-name>
+    <servlet-class>studentServlet.STGetMyOptCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>退选课程</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>STDropOptCourse</servlet-name>
+    <servlet-class>studentServlet.STDropOptCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>查询成绩</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>STGrade</servlet-name>
+    <servlet-class>studentServlet.STGrade</servlet-class>
+  </servlet>
+  <servlet>
+    <description>注销</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>myServlet.Logout</servlet-class>
+  </servlet>
+  <servlet>
+    <description>修改密码</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>STChangePassword</servlet-name>
+    <servlet-class>studentServlet.STChangePassword</servlet-class>
+  </servlet>
+  <servlet>
+    <description>意见信箱</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>STOpinion</servlet-name>
+    <servlet-class>studentServlet.STOpinion</servlet-class>
+  </servlet>
+  <servlet>
+    <description>显示信息</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TShowInfo</servlet-name>
+    <servlet-class>teacherServlet.TShowInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>查询信息</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TChangeInfo1</servlet-name>
+    <servlet-class>teacherServlet.TChangeInfo1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>修改信息</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TChangeInfo2</servlet-name>
+    <servlet-class>teacherServlet.TChangeInfo2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>课表</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TCourse</servlet-name>
+    <servlet-class>teacherServlet.TCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>意见信箱</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TOpinion</servlet-name>
+    <servlet-class>teacherServlet.TOpinion</servlet-class>
+  </servlet>
+  <servlet>
+    <description>教师退出</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TLogout</servlet-name>
+    <servlet-class>teacherServlet.TLogout</servlet-class>
+  </servlet>
+  <servlet>
+    <description>修改密码</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TChangePassword</servlet-name>
+    <servlet-class>teacherServlet.TChangePassword</servlet-class>
+  </servlet>
+  <servlet>
+    <description>修改密码</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AChangePassword</servlet-name>
+    <servlet-class>adminServlet.AChangePassword</servlet-class>
+  </servlet>
+  <servlet>
+    <description>查询信息</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AShowInfo</servlet-name>
+    <servlet-class>adminServlet.AShowInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>查询信息</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AChangeInfo1</servlet-name>
+    <servlet-class>adminServlet.AChangeInfo1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>修改信息</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AChangeInfo2</servlet-name>
+    <servlet-class>adminServlet.AChangeInfo2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>查询学生</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TEnterScore</servlet-name>
+    <servlet-class>teacherServlet.TEnterScore</servlet-class>
+  </servlet>
+  <servlet>
+    <description>查询我的所有课程</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TGetallcourse</servlet-name>
+    <servlet-class>teacherServlet.TGetallcourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>录入成绩</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TAddScore</servlet-name>
+    <servlet-class>teacherServlet.TAddScore</servlet-class>
+  </servlet>
+  <servlet>
+    <description>修改成绩</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TChangeScore</servlet-name>
+    <servlet-class>teacherServlet.TChangeScore</servlet-class>
+  </servlet>
+  <servlet>
+    <description>管理学生</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TstuManage</servlet-name>
+    <servlet-class>adminServlet.AstuManage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>管理教师</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TteaManage</servlet-name>
+    <servlet-class>adminServlet.AteaManage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>课程管理</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AcouManage</servlet-name>
+    <servlet-class>adminServlet.AcouManage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>查看意见信箱</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AShowOpinionInfo</servlet-name>
+    <servlet-class>adminServlet.AShowOpinionInfo</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+<filter>
+  	<filter-name>UserLoginFilter</filter-name>
+  	<filter-class>myServlet.UserLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>UserLoginFilter</filter-name>
+  	<url-pattern>/AdminManage/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>UserLoginFilter</filter-name>
+  	<url-pattern>/STManage/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>UserLoginFilter</filter-name>
+  	<url-pattern>/TeacherManage/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>StudentLoginServlet</servlet-name>
+    <url-pattern>/loginServlet/StudentLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeacherLoginServlet</servlet-name>
+    <url-pattern>/loginServlet/TeacherLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdministratorLoginServlet</servlet-name>
+    <url-pattern>/loginServlet/AdministratorLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>STShowInfo</servlet-name>
+    <url-pattern>/showInfoServlet/STShowInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>STChangeInfo1</servlet-name>
+    <url-pattern>/changeInfoServlet/STChangeInfo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>STChangeInfo2</servlet-name>
+    <url-pattern>/changeInfoServlet/STChangeInfo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>STCourse</servlet-name>
+    <url-pattern>/Course/STCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>STGetOptionalCourse</servlet-name>
+    <url-pattern>/Course/STGetOptionalCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>STChooseCourse</servlet-name>
+    <url-pattern>/Course/STChooseCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>STGetMyOptCourse</servlet-name>
+    <url-pattern>/DropCourse/STGetMyOptCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>STDropOptCourse</servlet-name>
+    <url-pattern>/DropCourse/STDropOptCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>STGrade</servlet-name>
+    <url-pattern>/Grade/STGrade</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/servlet/Logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>STChangePassword</servlet-name>
+    <url-pattern>/ChPassword/STChangePassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>STOpinion</servlet-name>
+    <url-pattern>/Opinion/STOpinion</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TShowInfo</servlet-name>
+    <url-pattern>/showInfoServlet/TShowInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TChangeInfo1</servlet-name>
+    <url-pattern>/changeInfoServlet/TChangeInfo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TChangeInfo2</servlet-name>
+    <url-pattern>/changeInfoServlet/TChangeInfo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TCourse</servlet-name>
+    <url-pattern>/Course/TCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TOpinion</servlet-name>
+    <url-pattern>/Opinion/TOpinion</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TLogout</servlet-name>
+    <url-pattern>/servlet/TLogout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TChangePassword</servlet-name>
+    <url-pattern>/ChPassword/TChangePassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AChangePassword</servlet-name>
+    <url-pattern>/ChPassword/AChangePassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AShowInfo</servlet-name>
+    <url-pattern>/showInfoServlet/AShowInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AChangeInfo1</servlet-name>
+    <url-pattern>/changeInfoServlet/AChangeInfo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AChangeInfo2</servlet-name>
+    <url-pattern>/changeInfoServlet/AChangeInfo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TEnterScore</servlet-name>
+    <url-pattern>/ScoreServlet/TEnterScore</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TGetallcourse</servlet-name>
+    <url-pattern>/ScoreServlet/TGetallcourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TAddScore</servlet-name>
+    <url-pattern>/ScoreServlet/TAddScore</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TChangeScore</servlet-name>
+    <url-pattern>/ScoreServlet/TChangeScore</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TstuManage</servlet-name>
+    <url-pattern>/myStuServlet/AstuManage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TteaManage</servlet-name>
+    <url-pattern>/myTeaServlet/AteaManage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AcouManage</servlet-name>
+    <url-pattern>/myCouServlet/AcouManage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AShowOpinionInfo</servlet-name>
+    <url-pattern>/opinionServlet/AShowOpinionInfo</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
